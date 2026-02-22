@@ -1,0 +1,345 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="29.5.0">
+  <diagram name="Page-1" id="F9drjvwvL5LiL4w93sgK">
+    <mxGraphModel dx="2391" dy="1266" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="UI - Telemetry Space" vertex="1">
+          <mxGeometry height="80" width="120" x="570" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="API - Telemetry FO" vertex="1">
+          <mxGeometry height="80" width="120" x="140" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-4" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ITelemetryData" vertex="1">
+          <mxGeometry height="182" width="330" x="60" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-5" parent="zH2MXGQ5JAekg6cSf4lI-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ id: GUID" vertex="1">
+          <mxGeometry height="26" width="330" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-6" parent="zH2MXGQ5JAekg6cSf4lI-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp;- satelliteId: string" vertex="1">
+          <mxGeometry height="26" width="330" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-7" parent="zH2MXGQ5JAekg6cSf4lI-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ timestamp: string; // format: YYYY-MM-DDThh:mm:ss&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="26" width="330" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-9" parent="zH2MXGQ5JAekg6cSf4lI-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- altitude: number; // &amp;gt;=0,&amp;nbsp;" vertex="1">
+          <mxGeometry height="26" width="330" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-10" parent="zH2MXGQ5JAekg6cSf4lI-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- velocity: number; // &amp;gt;=0" vertex="1">
+          <mxGeometry height="26" width="330" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-11" parent="zH2MXGQ5JAekg6cSf4lI-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- status: string; // healthy, critical, lost, doing-own-thing" vertex="1">
+          <mxGeometry height="26" width="330" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-16" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zH2MXGQ5JAekg6cSf4lI-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GET&lt;div&gt;/telemetry&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-18" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zH2MXGQ5JAekg6cSf4lI-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="POST&lt;div&gt;/telemetry&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-15" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="(optional) query parameters&lt;div&gt;- satelliteId&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- status&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-17" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Body should include telemetry info and validation" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-23" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zH2MXGQ5JAekg6cSf4lI-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-20" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="/telemetry/:id" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-22" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Return telemetry by entry Id." vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DELETE&lt;/div&gt;&lt;div&gt;/telemetry/:id&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-26" parent="1" style="text;whiteSpace=wrap;html=1;" value="Add pagination support to the GET /telemetry endpoint. &#xa;• Implement unit tests for the API endpoints. &#xa;• Include Docker support for easy deployment." vertex="1">
+          <mxGeometry height="70" width="330" x="40" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Table display of telemetry data Columns" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-29" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="filter by satId and/or health status" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-30" parent="1" style="whiteSpace=wrap;html=1;" value="Form to add new telemetry entry" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-31" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Allow to delete telemetry entry" vertex="1">
+          <mxGeometry height="60" width="120" x="670" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-32" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="210" width="570" x="890" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-33" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="SatId" vertex="1">
+          <mxGeometry height="20" width="50" x="100" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-35" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Altitude" vertex="1">
+          <mxGeometry height="20" width="50" x="260" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-36" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Velocity" vertex="1">
+          <mxGeometry height="20" width="50" x="320" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-37" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Health Status" vertex="1">
+          <mxGeometry height="20" width="90" x="380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-39" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Timestamp" vertex="1">
+          <mxGeometry height="20" width="90" x="160" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-41" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Actions" vertex="1">
+          <mxGeometry height="20" width="50" x="480" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-42" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="guid" vertex="1">
+          <mxGeometry height="20" width="50" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-43" parent="zH2MXGQ5JAekg6cSf4lI-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Filter search bar" vertex="1">
+          <mxGeometry height="20" width="153" x="97" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-45" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="telemetryService" vertex="1">
+          <mxGeometry height="182" width="270" x="455" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-46" parent="zH2MXGQ5JAekg6cSf4lI-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ saveTelemetryData(ITelemetryData)" vertex="1">
+          <mxGeometry height="26" width="270" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-47" parent="zH2MXGQ5JAekg6cSf4lI-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getTelemetryDataByParams(parameters)" vertex="1">
+          <mxGeometry height="26" width="270" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-48" parent="zH2MXGQ5JAekg6cSf4lI-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getTelemetryDataById(id)" vertex="1">
+          <mxGeometry height="26" width="270" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-49" parent="zH2MXGQ5JAekg6cSf4lI-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ deleteTelemetryEntryById(guid)" vertex="1">
+          <mxGeometry height="26" width="270" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-50" parent="zH2MXGQ5JAekg6cSf4lI-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-51" parent="zH2MXGQ5JAekg6cSf4lI-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="270" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Store" vertex="1">
+          <mxGeometry height="60" width="120" x="1070" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Array of telemetry Data" vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-55" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="User opens application" vertex="1">
+          <mxGeometry height="60" width="100" x="1960" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-56" parent="1" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" value="Telemetry data is retrieved from API" vertex="1">
+          <mxGeometry height="70" width="140" x="1790" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-58" parent="1" style="whiteSpace=wrap;html=1;" value="Table is displayed with telemetry data" vertex="1">
+          <mxGeometry height="60" width="120" x="1940" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-59" parent="1" style="whiteSpace=wrap;html=1;" value="Form entry of telemetry Data" vertex="1">
+          <mxGeometry height="60" width="120" x="1180" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-149" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="zH2MXGQ5JAekg6cSf4lI-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-60" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Entry New Telemetry Data" vertex="1">
+          <mxGeometry height="60" width="120" x="1290" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-61" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="210" width="310" x="1550" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-62" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Select SatId +V+" vertex="1">
+          <mxGeometry height="20" width="100" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-63" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Altitude" vertex="1">
+          <mxGeometry height="20" width="60" x="30" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-64" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Velocity" vertex="1">
+          <mxGeometry height="20" width="60" x="110" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-65" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Health Status +V+" vertex="1">
+          <mxGeometry height="20" width="100" x="190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-66" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Timestamp" vertex="1">
+          <mxGeometry height="20" width="90" x="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-68" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="guid" vertex="1">
+          <mxGeometry height="20" width="50" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-72" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="enter New SatId" vertex="1">
+          <mxGeometry height="20" width="100" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-73" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="TimestampOverride" vertex="1">
+          <mxGeometry height="20" width="115" x="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-74" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Save" vertex="1">
+          <mxGeometry height="30" width="80" x="30" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-86" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Cancel" vertex="1">
+          <mxGeometry height="30" width="80" x="210" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-85" parent="zH2MXGQ5JAekg6cSf4lI-61" style="rounded=0;whiteSpace=wrap;html=1;" value="Save and Create New" vertex="1">
+          <mxGeometry height="30" width="80" x="120" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-71" parent="1" style="whiteSpace=wrap;html=1;" value="Unique SatIds" vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-87" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Clicks Entry new Telemetry Data" vertex="1">
+          <mxGeometry height="100" width="100" x="1920" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Modal pops up&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="2080" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-91" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Save" vertex="1">
+          <mxGeometry height="100" width="100" x="2020" y="674" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-92" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Save and Create New" vertex="1">
+          <mxGeometry height="100" width="100" x="2140" y="674" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-93" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Cancel" vertex="1">
+          <mxGeometry height="100" width="100" x="2270" y="674" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-110" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zH2MXGQ5JAekg6cSf4lI-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-95" parent="1" style="whiteSpace=wrap;html=1;" value="Telemetry data saved." vertex="1">
+          <mxGeometry height="60" width="120" x="2050" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-96" parent="1" style="whiteSpace=wrap;html=1;" value="close modal" vertex="1">
+          <mxGeometry height="60" width="120" x="2110" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-97" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.736;entryY=0.093;entryDx=0;entryDy=0;entryPerimeter=0;" target="zH2MXGQ5JAekg6cSf4lI-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-98" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.32;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" target="zH2MXGQ5JAekg6cSf4lI-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-99" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.005;entryY=0.597;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="zH2MXGQ5JAekg6cSf4lI-96">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2370" y="1006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-103" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.378;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="zH2MXGQ5JAekg6cSf4lI-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-108" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zH2MXGQ5JAekg6cSf4lI-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-109" connectable="0" parent="zH2MXGQ5JAekg6cSf4lI-108" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.1238" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-104" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Is save successful?" vertex="1">
+          <mxGeometry height="60" width="85" x="2115" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-105" edge="1" parent="1" source="zH2MXGQ5JAekg6cSf4lI-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="zH2MXGQ5JAekg6cSf4lI-96">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2110" y="950" />
+              <mxPoint x="2090" y="950" />
+              <mxPoint x="2090" y="993" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-106" connectable="0" parent="zH2MXGQ5JAekg6cSf4lI-105" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.0072" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-107" parent="1" style="whiteSpace=wrap;html=1;" value="Telemetry form displays" vertex="1">
+          <mxGeometry height="60" width="120" x="2220" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-111" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Repeat modal for form upon error with keeping data, if save and create new, blank form" vertex="1">
+          <mxGeometry height="30" width="180" x="1880" y="905" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-112" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="UI Creation" vertex="1">
+          <mxGeometry height="290" width="140" x="460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-113" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Generate project for development" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-114" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Implement Itelemetry" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-115" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Create mock api response" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-116" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Create basic ui button for new telemetry data" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-117" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Get telemetry data to update or append to array" vertex="1">
+          <mxGeometry height="50" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-118" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Item 3" vertex="1">
+          <mxGeometry height="30" width="140" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-119" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Item 3" vertex="1">
+          <mxGeometry height="30" width="140" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-120" parent="zH2MXGQ5JAekg6cSf4lI-112" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="* Item 3" vertex="1">
+          <mxGeometry height="30" width="140" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-121" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Redux Store Actions/Reducer" vertex="1">
+          <mxGeometry height="180" width="140" x="1130" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-122" parent="zH2MXGQ5JAekg6cSf4lI-121" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="saveTelemetry" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-123" parent="zH2MXGQ5JAekg6cSf4lI-121" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="getTelemetry" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-124" parent="zH2MXGQ5JAekg6cSf4lI-121" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="deleteTelemetry" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-125" parent="zH2MXGQ5JAekg6cSf4lI-121" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="filters status/satellite" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-126" parent="zH2MXGQ5JAekg6cSf4lI-121" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="uniqueSatellites" vertex="1">
+          <mxGeometry height="30" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-128" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Redux Store state telemetry" vertex="1">
+          <mxGeometry height="150" width="140" x="960" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-129" parent="zH2MXGQ5JAekg6cSf4lI-128" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="telemetryData[]" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-130" parent="zH2MXGQ5JAekg6cSf4lI-128" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="loading" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-131" parent="zH2MXGQ5JAekg6cSf4lI-128" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="uniqueSatelliteIds" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-132" parent="zH2MXGQ5JAekg6cSf4lI-128" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="filters: Status, satellite" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-143" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Redux Store Effects" vertex="1">
+          <mxGeometry height="270" width="140" x="1460" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-144" parent="zH2MXGQ5JAekg6cSf4lI-143" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="on.saveTelemetry, want to refresh list with new entry and keep filters." vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-145" parent="zH2MXGQ5JAekg6cSf4lI-143" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="loading - this needs to play into getting to dom" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-146" parent="zH2MXGQ5JAekg6cSf4lI-143" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="uniqueSatelliteIds - if new satellite id, want to update" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-147" parent="zH2MXGQ5JAekg6cSf4lI-143" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="on.filters: Status, satellite is fetched from api" vertex="1">
+          <mxGeometry height="50" width="140" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-148" parent="zH2MXGQ5JAekg6cSf4lI-143" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="on.delete, api call and success failure, get state to be after finished loading" vertex="1">
+          <mxGeometry height="70" width="140" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zH2MXGQ5JAekg6cSf4lI-150" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="UI" vertex="1">
+          <mxGeometry height="60" width="120" x="1040" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
