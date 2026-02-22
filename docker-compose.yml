@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  # Production service
+  telemetry-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: telemetry-api
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    networks:
+      - telemetry-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Development service (use with: docker-compose -f docker-compose.yml up telemetry-api-dev)
+  telemetry-api-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: telemetry-api-dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    volumes:
+      - ./src:/app/src
+      - ./nodemon.json:/app/nodemon.json
+    networks:
+      - telemetry-network
+    restart: unless-stopped
+
+networks:
+  telemetry-network:
+    driver: bridge

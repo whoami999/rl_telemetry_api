@@ -3,13 +3,7 @@ import { AppError } from '../configs/app-error.config';
 import { E_TeleDataStatus } from '../enums/telemetry.enums';
 import { ITelemetryData } from '../interfaces/telemetry.interface';
 
-let telemetriesRepo: ITelemetryData[] = [
-    { id: '48933', satelliteId: 'Blue', altitude: 0, status: E_TeleDataStatus.CRITICAL, timestamp: '2026-02-22T22:11:33', velocity: 3243 },
-    { id: '48231', satelliteId: 'Alice', altitude: 0, status: E_TeleDataStatus.HEALTHY, timestamp: '2026-02-23T00:41:23', velocity: 1231 },
-    { id: '48414', satelliteId: 'Gold', altitude: 0, status: E_TeleDataStatus.LOST, timestamp: '2026-02-24T09:11:43', velocity: 2424 },
-    { id: '48111', satelliteId: 'Scarecrow', altitude: 0, status: E_TeleDataStatus.HEALTHY, timestamp: '2026-02-25T15:12:13', velocity: 4111 },
-    { id: '48211', satelliteId: 'Alice', altitude: 0, status: E_TeleDataStatus.CRITICAL, timestamp: '2026-02-26T13:12:13', velocity: 3121 }
-];
+let telemetriesRepo: ITelemetryData[] = [];
 
 export class TelemetryRepository {
     getAll(): Promise<ITelemetryData[]> {
